@@ -5,6 +5,14 @@ Spread Sheet API v4を使ってgopherをスプレッドシートに描く
 ![screenshots](https://raw.githubusercontent.com/howdy39/spreadsheets-api-on-golang/master/screenshots/screenshots.png)
 
 ## usage
+
+### install modules
+
+```console 
+go get golang.org/x/net/context golang.org/x/oauth2 google.golang.org/api/sheets/v4 google.golang.org/cloud/compute/metadata
+```
+
+### change spreadsheetId, sheetId
 src/main/main.go
 
 const spreadsheetId = "1XVXj4VCvnaI_QBCJFO_ikJfLKqXr9vhofYjCfQsVLbk"
@@ -14,15 +22,15 @@ spreadsheetId、sheetIdを自身がアクセス出来るスプレッドシート
 ともに対象のスプレッドシートを開いた際のURL内に含まれています。
 例)https://docs.google.com/spreadsheets/d/1XVXj4VCvnaI_QBCJFO_ikJfLKqXr9vhofYjCfQsVLbk/edit#gid=0
 
-```console 
-go get golang.org/x/net/context golang.org/x/oauth2 google.golang.org/api/sheets/v4 google.golang.org/cloud/compute/metadata
+### run
 
+```console 
 cd src/main
 go run main.go gclient.go sheetsService.go 
 ```
 
 **初回起動時のみ**以下のようにURLが表示されるのでブラウザでアクセスして認可を行ってください。
-認可するとコードが出てくるのでそれをコンソールに入力してください。
+認可すると認可コードが出てくるのでそれをコンソールに入力してください。
 
 ![step1](https://raw.githubusercontent.com/howdy39/spreadsheets-api-on-golang/master/screenshots/step1.png)
 

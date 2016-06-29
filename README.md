@@ -1,6 +1,9 @@
 # spreadsheet-api-on-golang
 Spread Sheet API v4を使ってgopherをスプレッドシートに描く
 
+## results
+![screenshots](https://raw.githubusercontent.com/howdy39/spreadsheets-api-on-golang/master/screenshots/screenshots.png)
+
 ## usage
 src/main/main.go
 

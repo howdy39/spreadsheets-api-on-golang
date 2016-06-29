@@ -1,5 +1,5 @@
 # spreadsheet-api-on-golang
-Spread Sheet API v4をgolangで実行する
+Spread Sheet API v4を使ってgopherをスプレッドシートに描く
 
 ## usage
 src/main/main.go
@@ -18,10 +18,10 @@ cd src/main
 go run main.go gclient.go sheetsService.go 
 ```
 
-![step1](https://raw.githubusercontent.com/howdy39/spreadsheets-api-on-golang/master/screenshots/step1.png)
-
 **初回起動時のみ**以下のようにURLが表示されるのでブラウザでアクセスして認可を行ってください。
 認可するとコードが出てくるのでそれをコンソールに入力してください。
+
+![step1](https://raw.githubusercontent.com/howdy39/spreadsheets-api-on-golang/master/screenshots/step1.png)
 
 ![step2](https://raw.githubusercontent.com/howdy39/spreadsheets-api-on-golang/master/screenshots/step2.png)
 

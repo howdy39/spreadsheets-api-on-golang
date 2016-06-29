@@ -2,7 +2,7 @@
 Spread Sheet API v4をgolangで実行する
 
 ## usage
-src/main.go
+src/main/main.go
 
 const spreadsheetId = "1XVXj4VCvnaI_QBCJFO_ikJfLKqXr9vhofYjCfQsVLbk"
 const sheetId = int64(0)
@@ -13,7 +13,13 @@ spreadsheetId、sheetIdを自身がアクセス出来るスプレッドシート
 
 ```console
 cd src/main
-go run *.go
+go run main.go gclient.go sheetsService.go 
 ```
+
+**初回起動時のみ**以下のようにURLが表示されるのでブラウザでアクセスして認可を行ってください。
+認可するとコードが出てくるのでそれをコンソールに入力してください。
+```conosle
+```
+
 
 
